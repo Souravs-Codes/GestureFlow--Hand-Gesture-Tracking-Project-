@@ -38,6 +38,51 @@ Each hand is processed independently:
 - The **left hand** represents numbers from **1 to 5**
 - The **right hand** represents numbers from **6 to 10**
 
+
+## 2️⃣ Install dependencies
+
+```bash    
+pip install -r requirements.txt
+```
+## 3️⃣ Run the application
+``` bash
+python VolumeHandControl.py
+```
+## ⚠️ Notes:
+
+Works best in good lighting
+
+Uses your default webcam
+
+Volume control is supported on Windows
+
+## 🎮 Gesture Overview
+
+| Gesture               | Action                |
+| --------------------- | --------------------- |
+| Open left hand        | Display numbers 1–5   |
+| Open right hand       | Display numbers 6–10  |
+| Thumb + ring finger   | Toggle volume control |
+| Thumb + middle finger | Toggle skeleton view  |
+| Finger distance       | Adjust system volume  |
+
+## 💡 Key Learnings
+
+1: Gesture systems depend heavily on logic design and UX
+
+2: Thumbs require special handling due to biomechanics see
+
+3: Stable UI anchors improve perceived accuracy
+
+4: Preventing accidental triggers is critical for usability
+
+## 📌 Future Improvements
+
+1: Gesture stabilization (anti-flicker)
+
+2: Smooth UI animations
+
+
 Numbers are rendered **above the hand** using the top-most landmark, ensuring the display remains stable even when fingers bend or move. Gesture cooldowns are applied to prevent false triggers.
 
 ---
