@@ -48,6 +48,17 @@ pip install -r requirements.txt
 ``` bash
 python VolumeHandControl.py
 ```
+
+
+## 📂 Project Structure
+├── VolumeHandControl.py # Main application
+
+├── HandTrackingModule.py # Hand tracking utilities
+
+├── requirements.txt # Dependencies
+
+└── README.md # Documentation
+
 ## ⚠️ Notes:
 
 Works best in good lighting
@@ -86,9 +97,3 @@ Volume control is supported on Windows
 Numbers are rendered **above the hand** using the top-most landmark, ensuring the display remains stable even when fingers bend or move. Gesture cooldowns are applied to prevent false triggers.
 
 ---
-
-## 📂 Project Structure
-├── VolumeHandControl.py # Main application
-├── HandTrackingModule.py # Hand tracking utilities
-├── requirements.txt # Dependencies
-└── README.md # Documentation
